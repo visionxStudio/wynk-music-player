@@ -1,9 +1,12 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:wynk_music_player/screens/now_playing.dart';
+import 'package:wynk_music_player/screens/demo.dart';
+// import 'package:wynk_music_player/screens/now_playing.dart';
 
 void main() {
+  AudioPlayer.logEnabled = true;
   runApp(MyApp());
 }
 
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NowPlaying(),
+      home: MyAudioList(),
     );
   }
 }

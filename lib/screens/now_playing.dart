@@ -77,9 +77,14 @@ class ToolBar extends StatelessWidget {
               color: Colors.white24,
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: Icon(
-              Icons.pause,
-              color: Colors.white,
+            child: GestureDetector(
+              onTap: () {
+                // TODO
+              },
+              child: Icon(
+                Icons.pause,
+                color: Colors.white,
+              ),
             ),
           ),
           Icon(
@@ -263,7 +268,7 @@ class CustomSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 16.0,
+        // top: 16.0,
         left: 40.0,
         right: 40.0,
       ),
@@ -293,6 +298,9 @@ class CustomSlider extends StatelessWidget {
                       onChanged: (value) {},
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: defaultSize * 1.5,
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.73,
