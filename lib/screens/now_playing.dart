@@ -19,7 +19,7 @@ class NowPlaying extends StatelessWidget {
             TopBar(height: height, defaultSize: defaultSize),
             AlbumArt(height: height),
             Container(
-              height: height * .25,
+              height: height * .34,
               decoration: BoxDecoration(
                 color: Color(0xFF763afe),
                 borderRadius: BorderRadius.only(
@@ -57,7 +57,7 @@ class ToolBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: 40.0,
-        vertical: 16.0,
+        vertical: 40.0,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -71,8 +71,8 @@ class ToolBar extends StatelessWidget {
             color: Colors.white,
           ),
           Container(
-            height: defaultSize * 4.5,
-            width: defaultSize * 4.5,
+            height: defaultSize * 5.5,
+            width: defaultSize * 5.5,
             decoration: BoxDecoration(
               color: Colors.white24,
               borderRadius: BorderRadius.circular(12.0),
@@ -108,10 +108,10 @@ class TitleAndFav extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 16.0,
-        left: 16.0,
-        right: 16.0,
-        bottom: 16.0,
+        top: 18.0,
+        left: 18.0,
+        right: 18.0,
+        bottom: 18.0,
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -165,13 +165,13 @@ class AlbumArt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height * 0.64,
+      height: height * 0.55,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(200.0),
         child: Center(
           child: Container(
-            width: MediaQuery.of(context).size.height * 0.3,
-            height: MediaQuery.of(context).size.height * 0.3,
+            width: MediaQuery.of(context).size.height * 0.35,
+            height: MediaQuery.of(context).size.height * 0.35,
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -263,7 +263,7 @@ class CustomSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 6.0,
+        top: 16.0,
         left: 40.0,
         right: 40.0,
       ),
